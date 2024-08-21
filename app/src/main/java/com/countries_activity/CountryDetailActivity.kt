@@ -1,5 +1,6 @@
 package com.countries_activity
 
+
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
@@ -21,17 +22,18 @@ class CountryDetailActivity : AppCompatActivity() {
             val alpha3CodeTextView: TextView = findViewById(R.id.alpha3CodeTextView) // Initialize
             val regionTextView: TextView = findViewById(R.id.regionTextView) // Initialize
             val subRegionTextView: TextView = findViewById(R.id.subRegionTextView) // Initialize
-            val capitalTextView: TextView = findViewById(R.id.capitalTextView) // Initialize
             val populationTextView: TextView = findViewById(R.id.populationTextView) // Initialize
             val areaTextView: TextView = findViewById(R.id.areaTextView) // Initialize
-            // ... other TextViews for the remaining fieldsPicasso.get().load(country.Flag).into(flagImageView)
+            // ... inside onCreate() ...
+            Picasso.get().load(country.FlagPng).into(flagImageView)
+            // ... other TextViews for the remaining
+
             nameTextView.text = country.Name
             nativeNameTextView.text = country.NativeName
             alpha2CodeTextView.text = country.Alpha2Code // Now you can use the variables
             alpha3CodeTextView.text = country.Alpha3Code
             regionTextView.text = country.Region
             subRegionTextView.text = country.SubRegion
-            capitalTextView.text = country.Capital
             populationTextView.text = country.Population.toString()
             areaTextView.text = country.Area.toString()
         }

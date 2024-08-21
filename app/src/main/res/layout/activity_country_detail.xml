@@ -66,18 +66,10 @@
         android:layout_marginTop="8dp" />
 
     <TextView
-        android:id="@+id/capitalTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/subRegionTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="8dp" />
-
-    <TextView
         android:id="@+id/populationTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/capitalTextView"
+        app:layout_constraintTop_toBottomOf="@id/subRegionTextView"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="8dp" />
 
